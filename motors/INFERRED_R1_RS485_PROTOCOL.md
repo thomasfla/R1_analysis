@@ -2,8 +2,11 @@
 
 ## Link
 
-- 6,000,000 baud inverted UART
+- 6,000,000 baud rs485
 - Transaction: 20-byte command, then 26-byte response
+- One full transaction is about 85us per motor
+- control frequency is measured at 1.25 kHz
+<img width="1261" height="230" alt="image" src="https://github.com/user-attachments/assets/55b98d1a-5c2c-4b5c-a861-7600b401eb0a" />
 
 ## Command
 
