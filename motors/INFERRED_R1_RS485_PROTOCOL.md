@@ -87,18 +87,5 @@ Response CRC:
 ```text
 crc32_core(response[2:22])
 ```
-
 The response CRC excludes the `FC EE` header.
 
-## Synchronization
-
-1. Command starts with `FE EE`.
-2. Response starts with `FC EE` at offset 20.
-3. `(command[2] & 0x0F) == (response[2] & 0x0F)`.
-4. Both CRC values are valid.
-
-## Tools
-
-- `tools/live_motor_plot.py`
-- `tools/capture_usb_frames.py`
-- `tools/unitree_motor_crc.py`
